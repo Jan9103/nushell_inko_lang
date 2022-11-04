@@ -6,6 +6,8 @@
 	url: 'https://github.com/Jan9103/nushell_inko_lang'
 	min_nu_version: [0 70 0]
 	max_nu_version: [0 70 0]
-	modules: []
+	min_packer_version: [0 2 0]
+	max_packer_version: [0 2 0]
+	modules: ['ivm' 'inko' 'docs']
 }
 # vim: ft=nu
