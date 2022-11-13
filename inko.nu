@@ -8,14 +8,14 @@
 #]
 
 # Compiles and runs FILE
-export extern 'inko run' [
+export extern run [
 	--format(-f): string  # The output format to use for diagnostics
 	--include(-i): path   # A directory to add to the list of source directories
 	file: path
 ]
 
 # Compiles FILE
-export extern 'inko build' [
+export extern build [
 	--format(-f): string  # The output format to use for diagnostics
 	--output(-o): path    # The path to write the bytecode file to
 	--include(-i): path   # A directory to add to the list of source directories
@@ -23,10 +23,10 @@ export extern 'inko build' [
 ]
 
 # Runs all unit tests in ./test
-export extern 'inko test' []
+export extern test []
 
 # Check an entire project or a file for errors.
-export extern 'inko check' [
+export extern check [
 	--format(-f): string  # The output format to use for diagnostics
 	file?: path
 ]

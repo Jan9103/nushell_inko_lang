@@ -1,5 +1,5 @@
 {
-	version: [1 0 0]
+	version: [1 0 1]
 	description: 'Stuff for inko-lang.org'
 	copyright: '2022 Jan9103 (@jan9103:matrix.org)'
 	license: 'MIT'
@@ -8,6 +8,7 @@
 	max_nu_version: [0 71 0]
 	min_packer_version: [0 2 0]
 	max_packer_version: [0 2 0]
-	modules: ['ivm' 'inko' 'docs']
+	modules: ['docs']
+	prefixed_modules: ['ivm' 'inko']
 }
 # vim: ft=nu
