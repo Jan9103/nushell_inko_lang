@@ -17,40 +17,40 @@ def complete_setting_names [] {
 }
 
 # Install a new version
-export extern install [
+export extern "ivm install" [
 	version: string@known_versions
 ]
 
 # Uninstall an existing version
-export extern uninstall [
+export extern "ivm uninstall" [
 	version: string@installed_versions
 ]
 
 # List all installed versions
-export extern list []
+export extern "ivm list" []
 
 # List all available versions
-export extern known []
+export extern "ivm known" []
 
 # Run a command with a specific version
-export extern run [
+export extern "ivm run" [
 	version: string@installed_versions
 	command: string
 	...args: string
 ]
 
 # Set the default version
-export extern default [
+export extern "ivm default" [
 	version: string@installed_versions
 ]
 
 # Clean up temporary data
-export extern clean []
+export extern "ivm clean" []
 
 # Removes all versions and temporary data
-export extern implode []
+export extern "ivm implode" []
 
 # Prints the value of a setting.
-export extern show [
+export extern "ivm show" [
 	setting: string@complete_setting_names
 ]
